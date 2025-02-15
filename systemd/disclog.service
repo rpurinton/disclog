@@ -4,15 +4,13 @@ Documentation=https://github.com/rpurinton/disclog
 
 [Service]
 Type=simple
-ExecStart=/bin/bash -c '/usr/bin/tail -n 0 -f /var/log/php-fpm/www-error.log | /usr/bin/error_log'
+ExecStart=/bin/bash -c '/usr/bin/tail -n 0 -f /var/log/httpd/error_log | /usr/bin/error_log'
 ExecStartPost=/usr/bin/app_log disclog.service started
 ExecStopPost=/usr/bin/app_log disclog.service stopped
 Restart=always
 RestartSec=5
 User=root
 Group=root
-CPUQuota=20%
-MemoryLimit=50M
 
 [Install]
 WantedBy=multi-user.target

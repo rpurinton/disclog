@@ -2,7 +2,9 @@
     "name": "rpurinton/disclog",
     "description": "Disclog project",
     "type": "project",
-    "require": {},
+    "require": {
+        "rpurinton/log": "^1.0"
+    },
     "autoload": {
         "psr-4": {
             "RPurinton\\Disclog\\": "src/"
@@ -14,5 +16,6 @@
             "email": "russell.purinton@gmail.com"
         }
     ],
-    "minimum-stability": "stable"
+    "minimum-stability": "stable",
+    "version": "1.0.1"
 }

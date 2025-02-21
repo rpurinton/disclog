@@ -2,16 +2,15 @@
 
 namespace RPurinton\Disclog;
 
+use RPurinton\Log;
+
 class AppLog
 {
-	function __construct(array $argv)
-	{
-		unset($argv[0]);
-		$url = json_decode(file_get_contents(__DIR__ . "/../config/disclog.json"), true)["app-log"];
-		if (count($argv)) return Webhook::send($url, substr(implode(" ", $argv), 0, 2000));
-		while (($line = fgets(STDIN)) !== false) {
-			$line = trim($line);
-			Webhook::send($url, substr($line, 0, 2000));
-		}
-	}
+    function __construct(array $argv)
+    {
+        Log::install();
+        unset($argv[0]);
+        if (count($argv)) return Log::info(substr(implode(" ", $argv), 0, 2000));
+        while (($line = fgets(STDIN)) !== false) Log::info(substr(trim($line), 0, 2000));
+    }
 }

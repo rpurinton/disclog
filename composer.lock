@@ -4,15 +4,140 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "47524c36d10edd3c5123f16e1b21e4d3",
-    "packages": [],
+    "content-hash": "7d08dc8ff872d0b5245138338842b223",
+    "packages": [
+        {
+            "name": "rpurinton/config",
+            "version": "1.0.21",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rpurinton/config.git",
+                "reference": "8675770de22dc4282ed4f835c802897e5d33e4af"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rpurinton/config/zipball/8675770de22dc4282ed4f835c802897e5d33e4af",
+                "reference": "8675770de22dc4282ed4f835c802897e5d33e4af",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": "^8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "RPurinton\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Russell Purinton",
+                    "email": "russell.purinton@gmail.com"
+                }
+            ],
+            "description": "A basic configuration loading utility.",
+            "support": {
+                "issues": "https://github.com/rpurinton/config/issues",
+                "source": "https://github.com/rpurinton/config/tree/1.0.21"
+            },
+            "time": "2025-02-21T17:59:19+00:00"
+        },
+        {
+            "name": "rpurinton/https",
+            "version": "1.0.15",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rpurinton/https.git",
+                "reference": "af12538c8e508c830746eb3da2d790348f9e00bd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rpurinton/https/zipball/af12538c8e508c830746eb3da2d790348f9e00bd",
+                "reference": "af12538c8e508c830746eb3da2d790348f9e00bd",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "php": "^8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "RPurinton\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Russell Purinton",
+                    "email": "russell.purinton@gmail.com"
+                }
+            ],
+            "description": "Abstract Static Class for making HTTPS Requests in PHP/Composer",
+            "support": {
+                "issues": "https://github.com/rpurinton/https/issues",
+                "source": "https://github.com/rpurinton/https/tree/1.0.15"
+            },
+            "time": "2025-02-21T18:01:19+00:00"
+        },
+        {
+            "name": "rpurinton/log",
+            "version": "1.0.19",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rpurinton/log.git",
+                "reference": "67419d8a7820966351cd8b51ba05240c99f5b405"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rpurinton/log/zipball/67419d8a7820966351cd8b51ba05240c99f5b405",
+                "reference": "67419d8a7820966351cd8b51ba05240c99f5b405",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.0",
+                "rpurinton/config": "^1.0",
+                "rpurinton/https": "^1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "RPurinton\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Russell Purinton",
+                    "email": "russell.purinton@gmail.com"
+                }
+            ],
+            "description": "A Logging Library",
+            "support": {
+                "issues": "https://github.com/rpurinton/log/issues",
+                "source": "https://github.com/rpurinton/log/tree/1.0.19"
+            },
+            "time": "2025-02-21T18:01:41+00:00"
+        }
+    ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {},
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
-    "platform-dev": [],
+    "platform": {},
+    "platform-dev": {},
     "plugin-api-version": "2.6.0"
 }

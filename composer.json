@@ -3,7 +3,7 @@
     "description": "Disclog project",
     "type": "project",
     "require": {
-        "rpurinton/log": "^1.0"
+        "rpurinton/log": "^1.0.23"
     },
     "autoload": {
         "psr-4": {
@@ -17,5 +17,5 @@
         }
     ],
     "minimum-stability": "stable",
-    "version": "1.0.2"
+    "version": "1.0.3"
 }
